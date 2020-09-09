@@ -19,6 +19,8 @@ $http.post('http://httpbin.org/post',
     assert.equal(response.statusCode, 200, 'Expected a 200 OK response');
 
     console.log('Response:', body.json);
+    
+    // need to reference this variable below from the varibles.tf file
     console.log(${var.time});
     assert.equal(body.json.widgetType, 'gear', 'Expected a gear widget type');
     assert.equal(body.json.widgetCount, 10, 'Expected 10 widgets');
