@@ -1,1 +1,1 @@
-# terroform_synthetics
+# terraform_synthetics
