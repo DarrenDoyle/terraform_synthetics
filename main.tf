@@ -29,7 +29,7 @@ resource "newrelic_synthetics_monitor" "foo" {
 
 #  the templatefile function offers a built-in mechanism for rendering a template from a file.
 data "template_file" "foo_script" {
-  template = file("${path.module}/hello.tpl")
+  template = file("${path.module}/scriptapi.tpl")
 }
 
 
